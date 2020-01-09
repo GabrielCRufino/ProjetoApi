@@ -1,4 +1,4 @@
-package com.example.curso.entities;
+  package com.example.curso.entities;
 
 import java.io.Serializable;
 
@@ -8,7 +8,6 @@ import javax.persistence.GenerationType;
 import javax.persistence.Id;
 
 @Entity
-
 public class User implements Serializable {
 	private static final long serialVersionUID = 1L;
 	

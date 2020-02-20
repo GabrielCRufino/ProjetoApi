@@ -1,4 +1,4 @@
-package com.example.curso.services;
+ package com.example.curso.services;
 
 import java.util.List;
 import java.util.Optional;
@@ -15,7 +15,7 @@ public class CategoryService {
 	@Autowired
 	private CategoryRepository repository;
 	
-	public List<Category> findAll(){	// repassa a chamada para o findAll
+	public List<Category> findAll(){
 		return repository.findAll();
 	}
 	
@@ -23,5 +23,4 @@ public class CategoryService {
 		Optional<Category> obj = repository.findById(id);
 		return obj.get();
 	}
-	
 }

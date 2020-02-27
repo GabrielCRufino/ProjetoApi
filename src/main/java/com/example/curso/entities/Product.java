@@ -9,7 +9,12 @@ import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.Table;
+<<<<<<< HEAD
 import javax.persistence.Transient;
+=======
+
+import com.fasterxml.jackson.annotation.JsonIgnore;
+>>>>>>> 029b17a3a5a6f0b4d40a937c3d6464ad46e41ef3
 
 @Entity
 @Table(name = "tb_product")
@@ -25,8 +30,19 @@ public class Product implements Serializable{
 	private Double price;
 	private String imgUrl;
 	
+<<<<<<< HEAD
 	@Transient
 	private Set<Category> categories = new HashSet<>();
+=======
+	@ManyToMany
+	@JoinTable(name = "tb_product_category", 
+	joinColumns = @JoinColumn(name = "product_id"), 
+	inverseJoinColumns = @JoinColumn(name = "category_id"))
+	private Set<Category> categories = new HashSet<>();
+	
+	@OneToMany(mappedBy = "id.product")
+	private Set<OrderItem> items = new HashSet<>();
+>>>>>>> 029b17a3a5a6f0b4d40a937c3d6464ad46e41ef3
 	
 	public Product() {
 	}
@@ -89,6 +105,17 @@ public class Product implements Serializable{
 		return categories;
 	}
 	
+<<<<<<< HEAD
+=======
+	@JsonIgnore 
+	public Set<Order> getOrders(){
+		Set<Order> set = new HashSet<>();
+		for (OrderItem x : items) {
+			set.add(x.getOrder());
+		}
+		return set;
+	}
+>>>>>>> 029b17a3a5a6f0b4d40a937c3d6464ad46e41ef3
 
 	@Override
 	public int hashCode() {

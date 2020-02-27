@@ -15,7 +15,7 @@ import com.example.curso.services.OrderService;
 @RestController
 @RequestMapping(value = "/orders")
 public class OrderResource {
-
+	
 	@Autowired
 	private OrderService service;
 	
@@ -26,13 +26,8 @@ public class OrderResource {
 	}
 	
 	@GetMapping(value = "/{id}")
-	public ResponseEntity<Order> findByid(@PathVariable Long id){
+	public ResponseEntity<Order> findById(@PathVariable Long id){
 		Order obj = service.findById(id);
 		return ResponseEntity.ok().body(obj);
 	}
 }
-
-
-
-
-

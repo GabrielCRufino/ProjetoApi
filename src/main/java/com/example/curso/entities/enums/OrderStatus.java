@@ -2,11 +2,11 @@ package com.example.curso.entities.enums;
 
 public enum OrderStatus {
 
-	WAITING_PAYMENT(1), // Aguardando pagamento
-	PAID(2),			 // Pago
-	SHIPPED(3),		 // Enviado
-	DELIVERED(4),		 // Entrgue
-	CANCELED(5);		 // Cancelado]
+	WAITING_PAYMENT(1),
+	PAID(2),
+	SHIPPED(3),
+	DELIVERED(4),
+	CANCELED(5);
 	
 	private int code;
 	
@@ -19,8 +19,8 @@ public enum OrderStatus {
 	}
 	
 	public static OrderStatus valueOf(int code) {
-		for(OrderStatus value : OrderStatus.values()) {
-			if (value.getCode() == code) {
+		for (OrderStatus value : OrderStatus.values()) {
+			if(value.getCode() == code) {
 				return value;
 			}
 		}
@@ -28,4 +28,6 @@ public enum OrderStatus {
 	}
 	
 }
+
+
 

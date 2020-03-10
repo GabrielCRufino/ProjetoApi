@@ -15,7 +15,7 @@ import com.example.curso.services.CategoryService;
 @RestController
 @RequestMapping(value = "/categories")
 public class CategoryResource {
-
+	
 	@Autowired
 	private CategoryService service;
 	
@@ -26,13 +26,8 @@ public class CategoryResource {
 	}
 	
 	@GetMapping(value = "/{id}")
-	public ResponseEntity<Category> findByid(@PathVariable Long id){
+	public ResponseEntity<Category> findById(@PathVariable Long id){
 		Category obj = service.findById(id);
 		return ResponseEntity.ok().body(obj);
 	}
 }
-
-
-
-
-

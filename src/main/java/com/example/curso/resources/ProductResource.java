@@ -15,7 +15,7 @@ import com.example.curso.services.ProductService;
 @RestController
 @RequestMapping(value = "/products")
 public class ProductResource {
-
+	
 	@Autowired
 	private ProductService service;
 	
@@ -26,13 +26,8 @@ public class ProductResource {
 	}
 	
 	@GetMapping(value = "/{id}")
-	public ResponseEntity<Product> findByid(@PathVariable Long id){
+	public ResponseEntity<Product> findById(@PathVariable Long id){
 		Product obj = service.findById(id);
 		return ResponseEntity.ok().body(obj);
 	}
 }
-
-
-
-
-

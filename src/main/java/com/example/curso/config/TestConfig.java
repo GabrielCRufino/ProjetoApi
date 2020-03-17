@@ -33,13 +33,13 @@ public class TestConfig implements CommandLineRunner {
 	private OrderRepository orderRepository;
 	
 	@Autowired
+	private OrderItemRepository orderItemRepository;
+	
+	@Autowired
 	private CategoryRepository categoryRepository;
 	
 	@Autowired
 	private ProductRepository productRepository;
-	
-	@Autowired
-	private OrderItemRepository orderItemRepository;
 	
 	@Override
 	public void run(String... args) throws Exception {
@@ -48,11 +48,17 @@ public class TestConfig implements CommandLineRunner {
 		Category cat2 = new Category(null, "Verduras");
 		Category cat3 = new Category(null, "Pastel");
 		
-		Product p1 = new Product (null, "Alface", "Alface frescas selecionadas, colidas na nossa fazenda.", 84, 10.07, "");
+		Product p1 = new Product (null, "Maçã Verde", "Maça frescas selecionadas, vindas da nossa fazenda.", 84, 10.07, "");
 		Product p2 = new Product(null, "Melancia", "Melancia frescas selecionadas, vindas da nossa fazenda", 4, 27.62, "");
-		Product p3 = new Product(null, "Pastel Especial", "Pastel, muito bem recheado queijo presuto ovo azeitona tomate", 14, 27.62,"");
+		Product p3 = new Product(null, "Banana Terra", "Banana frescas selecionadas, vindas da nossa fazenda", 0, 27.62,"");
 		Product p4 = new Product(null, "Tomate à Granel", "Tomate frescas selecionadas, vindas da nossa fazend", 30, 7.89, "");
 		Product p5 = new Product(null, "Melão Dino", "Melão frescas selecionadas, vindas da nossa fazenda", 12, 5.29, "");
+		
+		Product p6 = new Product (null, "Alface", "Alface frescas selecionadas, colidas na nossa fazenda.", 84, 10.07, "");
+		Product p7 = new Product(null, "Melancia", "Melancia frescas selecionadas, vindas da nossa fazenda", 4, 27.62, "");
+		Product p8 = new Product(null, "Pastel Especial", "Pastel, muito bem recheado queijo presuto ovo azeitona tomate", 14, 27.62,"");
+		Product p9 = new Product(null, "Tomate à Granel", "Tomate frescas selecionadas, vindas da nossa fazend", 30, 7.89, "");
+		Product p10 = new Product(null, "Melão Dino", "Melão frescas selecionadas, vindas da nossa fazenda", 12, 5.29, "");
 		
 		categoryRepository.saveAll(Arrays.asList(cat1, cat2, cat3));
 		productRepository.saveAll(Arrays.asList(p1, p2, p3, p4, p5));
@@ -63,7 +69,8 @@ public class TestConfig implements CommandLineRunner {
 		p4.getCategories().add(cat2);
 		p5.getCategories().add(cat1);
 		
-		productRepository.saveAll(Arrays.asList(p1, p2, p3, p4, p5));
+		categoryRepository.saveAll(Arrays.asList(cat1, cat2, cat3));
+		productRepository.saveAll(Arrays.asList(p6, p7, p8, p9, p10));
 		
 		User u1 = new User(null, "Maria", "Rodrigues", "11/02/2002", "mariarodris@email.com", "987654321",
 				"Rua Tra lá lá 70", "39397600970", "Lapa", "Maria de Rodrigues", "1234 6655 7890", "10/2024", "007");

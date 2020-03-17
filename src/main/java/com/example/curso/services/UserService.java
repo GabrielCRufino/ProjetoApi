@@ -34,7 +34,7 @@ public class UserService {
 		return repository.save(obj);
 		
 	}
-	
+
 	public void delete(Long id) {
 		try {
 			repository.deleteById(id);			
@@ -61,5 +61,5 @@ public class UserService {
 		entity.setEmail(obj.getEmail());
 		entity.setEndereço(obj.getEndereço());		
 	}
-	
+
 }

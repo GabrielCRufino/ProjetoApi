@@ -1,0 +1,21 @@
+.fundo{
+    background-color: #F5F5F5cc;
+    border-radius: 10px
+}
+.form-signin {
+    width: 100%;
+    max-width: 330px;
+    padding: 15px;
+    margin: auto;
+}
+
+.imgfundo{
+    width: 100%;
+    position: absolute;
+}
+.site{
+    position: relative;
+}
+body{
+    background-image: url("../Img/ImagemDEfundo4.jpg");
+}

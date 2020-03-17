@@ -1,0 +1,58 @@
+.PeditosTitulo{
+    color: white;
+}
+
+.BotaoPgs{
+  text-align: center;
+}
+.BotaoCompras{
+  text-align: left;
+  
+}
+.BotaoRetira{
+  text-align: right;
+  background-color: #FFFF00cc;
+}
+
+.Barraca{
+  height: 225px;
+  width: 348px;
+  object-fit: cover;
+  object-position: center;
+}
+
+
+
+
+footer {
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+}
+
+#topImagem{
+  height: 30em;
+  width: 83em;
+  position: absolute;
+  margin-top: 0;
+  margin-left: 0;
+}
+#tabela{
+  position: relative;
+  margin-top: 14.5%;
+}
+
+.fundoBotao{
+  background-color: #FFFFFFcc;
+}
+
+/*
+
+#botaoVerd{
+ background-color: rgba(0, 238, 0, 0.8);
+}
+#botaoVerm{
+  background-color: rgba(red, green, blue, alpha);
+}
+#botaoAmarelo{
+  background-color: rgba(red, green, blue, alpha);
+}

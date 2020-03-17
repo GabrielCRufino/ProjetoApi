@@ -1,0 +1,62 @@
+.rodapé{
+    text-align: center;
+    margin-top: 1%;
+    background: #ccf9fa52;
+    border-top: 0;
+}
+
+.Titulo1{
+   margin-top: 2%;
+}
+
+.fixed-top {
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 1030;
+}
+.shadow {
+    box-shadow: 0 .5rem 1rem rgba(0,0,0,.15)!important;
+}
+.p-0 {
+    padding: 0!important;
+}
+.pt-3, .py-3 {
+    padding-top: 1rem!important;
+}
+
+.pb-2, .py-2 {
+    padding-bottom: .5rem!important;
+}
+.mb-3, .my-3 {
+    margin-bottom: 1rem!important;
+}
+.mr-0, .mx-0 {
+    margin-right: 0!important;
+}
+.w-100 {
+    width: 100%!important;
+}
+.navbar .form-control {
+    padding: .75rem 1rem;
+    border-width: 0;
+    border-radius: 0;
+}
+.form-control-dark {
+    color: #fff;
+    background-color: rgba(255, 255, 255, .1);
+    border-color: rgba(255, 255, 255, .1);
+}
+
+
+
+#MenuEsquerda{
+    margin-top: 3%;
+
+}
+
+#icone{
+    padding: 2.5em;
+    background-color: green;
+}

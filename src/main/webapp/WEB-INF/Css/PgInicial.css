@@ -1,0 +1,137 @@
+
+@media screen and (max-width: 1999px) { 
+    #desenhoB{
+        display: none;
+    }
+    .opçoes{
+        font-size: 80%;
+    }
+    #divisao{
+        background-color: white;
+        padding-top: 4%;
+    }
+    .bg-capa{
+        margin-top: 10%;
+    }
+   
+}
+
+
+/*  Parte final da pagina   */
+.blog-footer {
+    padding: 1rem 1em;
+    color: #999;
+    text-align: center;
+    background-color: #f9f9f9;
+    border-top: .05rem solid #e5e5e5;
+    position: relative;
+}
+
+.opçoes{
+    margin-top: -1em;
+    margin-bottom: 1em;
+}
+
+
+/*       para definir botoes do fim da pagina       */
+.blog-pagination {
+    margin-top: 1em;
+    margin-bottom: 1em;
+}
+.blog-pagination > .btn {
+    border-radius: 2rem;
+}
+
+/*       fundo transparente verde        */
+.bg-capa{
+    background-color: #27693bcc;
+    position: relative;
+}
+
+
+/*    para definir imagem de vendedor e cliente     */
+.clienteFoto{
+    width: 200px;
+    height: 250px;
+    object-fit: cover;
+    object-position: center;
+}
+.vendedoresFoto{
+    width: 200px;
+    height: 250px;
+    object-fit: cover;
+    object-position: center;
+}
+
+/* fundo para vendedor e cliente */
+
+.fundoVenMenina{
+    background-color: rgba(250, 250, 250, 0.2);
+}
+
+/*      para definir imagem de fundo        */
+.ImagemDEFundo{
+    width: 100%;
+    position: absolute;
+    z-index: -1;
+}
+
+
+.Site{
+    
+    width: 100%;
+    color: black;
+  
+}
+
+#Corpo{
+    background-color: rgba(250, 250, 250, 0.6);
+    position: relative;
+}
+
+
+
+/*
+body{
+    background-image: url("../ImgPginicial/ImagemDEfundo2.jpg");
+    background-repeat: no-repeat;
+}
+/*           */
+.palavrasCabeçalho{
+    background-color: #4CAF50; /* Green */
+    border-radius: 30%;
+    color: transparent;
+    padding: 9px 18px;
+    text-align: center;
+    
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+}
+
+.b1{
+    background-color: transparent; 
+    color: black; 
+    border: 2px solid #4CAF50;
+}
+.b1:hover {
+    background-color: #4CAF50;
+    color: white;
+}
+
+.b2 {
+    background-color: transparent; 
+    color: black; 
+    border: 2px solid #4CAF50;
+}
+.b2:hover {
+    background-color: #4CAF50;
+    color: white;
+}
+
+#fotodesenho{
+    background-image: url(//ImgPginicial/ImagemdeFundo.jpg);
+    z-index: 1;
+}

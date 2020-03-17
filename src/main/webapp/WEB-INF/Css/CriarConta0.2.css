@@ -1,0 +1,43 @@
+
+.Corpo{
+}
+.caixas{
+}
+.Titulo{
+    text-align: center;
+}
+.cabeçalho{
+    width: auto 50%;
+    text-align: center;
+    border: 5%;
+    background-color: aquamarine;
+}
+
+
+
+
+
+
+
+.form-group{
+    margin: 7px auto;
+}
+label{
+    width: 150px;
+    display: inline-block;
+}
+input[type="text"], input[type="email"], input[type="password"], input[type="date"]{
+    padding: 4px;
+    border-radius: 5px;
+}
+/*
+input:invalid{
+    border-color: crimson;
+    box-shadow: 0px 0px 3 px crimson;
+}
+input:focus{
+    outline: none;
+}
+span{
+    color: crimson;
+}
